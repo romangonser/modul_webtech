@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>graphis99-grid</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        /* CSS für die Bewegung von unten nach oben */
+
+
+
+        .number99 {
+            position: absolute;
+            bottom: -100px;
+            /* Startposition außerhalb des Bildschirms */
+            left: 50%;
+            transform: translateX(-50%);
+            transition: bottom 0.5s ease-out;
+            /* Schnellerer Übergang */
+        }
+
+        /* Die Endposition wird hier nicht mehr durch eine Klasse gesteuert */
+
+
+        /* Sicherstellen, dass die draggable-Elemente sichtbar sind */
+        .draggable {
+            cursor: move;
+            /* Cursor ändern, um anzuzeigen, dass sie verschiebbar sind */
+        }
+
+        /* Container-Stile */
+        .postergraphis99 {
+            position: relative;
+            /* Damit die draggable-Elemente relativ positioniert werden können */
+            height: 100vh;
+            /* Optional: Höhe auf 100% des Viewports */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="postergraphis99">
+        <div class="grid">
+            <div class="frame-g green draggable">
+                <h1>g</h1>
+            </div>
+            <div class="frame-r red draggable">
+                <h1>r</h1>
+            </div>
+            <div class="container-graphis">
+                <h2 class="graphis white">graphis</h2>
+            </div>
+            <div class="container-99">
+                <h2 class="number99 white count draggable">99</h2>
+            </div>
+            <div class="frame-a red draggable">
+                <h1>a</h1>
+            </div>
+            <div class="container-ph">
+                <div class="container-p">
+                    <div class="frame-l green transparent draggable">
+                        <h1>l</h1>
+                    </div>
+                    <div class="frame-o white draggable">
+                        <h1>o</h1>
+                    </div>
+                </div>
+                <div class="frame-h green draggable">
+                    <h1>h</h1>
+                </div>
+            </div>
+            <div class="container-info">
+                <div class="info-box white">
+                    <h3>
+                        GRAPHIC ART<br>
+                        AND APPLIED ART<br>
+                        FREIE GRAFIK UND<br>
+                        GEBRAUCHSGRAFIK<br>
+                        ART GRAPHIQUE<br>
+                        ET ART APPLIQUÉ
+                    </h3>
+                </div>
+            </div>
+            <div class="frame-i red draggable">
+                <h1>i</h1>
+            </div>
+            <div class="frame-s red draggable">
+                <h1>s</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

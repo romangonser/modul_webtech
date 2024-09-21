@@ -1,0 +1,168 @@
+/* ------- Import------- */
+
+
+@import url("https://use.typekit.net/nkm2mrz.css");
+
+body{
+    font-family: "Neue Haas Grotesk Display Pro", Helvetica, Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    margin: 0px;
+}
+
+
+/*-----colors----*/
+
+.Black{
+    fill: rgb(0, 0, 0);
+}
+
+.red{
+    fill: #EA2D3F;
+}
+
+.green{
+    fill: #009879;
+}
+
+.white{
+    fill: rgb(255, 255, 255);
+    color: white;
+}
+
+
+/*-----Tags----*/
+
+
+h1{
+    /*-----Free for Big Letters----*/
+}
+
+
+h2{
+text-align: right;
+font-family: "Neue Haas Grotesk Display Pro";
+font-size: 7.6rem;
+font-weight: 500;
+margin: 0
+;
+
+
+    
+}
+
+h3{
+    text-align: right;
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-size: 2rem;
+    font-weight: 450;
+    
+}
+
+
+
+/*-----ID----*/
+
+
+
+
+
+/*-----Klassen----*/
+
+.graphis-99{
+    display: flex;
+    align-items: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-gr{
+    display: flex;
+        align-items: flex-start;
+        padding: 8px;
+gap: 8px;
+
+
+}
+
+.frame-g{
+    display: flex;
+justify-content: flex-end;
+align-items: flex-start;
+margin-left: -60px;
+
+}
+
+.frame-r{
+    display: flex;
+padding: 5px 0px;
+align-items: flex-start;
+
+
+}
+
+.titel{
+    display: flex;
+padding: 8x;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.frame-a{
+    display: flex;
+padding: 8px;
+align-items: flex-start;
+}
+
+
+.container-ph{
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    gap: 8px;
+    
+    
+}
+
+.container-p{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.frame-l{
+z-index: 1;
+}
+
+.frame-o{
+margin-left: -80px;
+z-index: 0;
+}
+
+.frame-h{
+position: relative;
+margin-top: -180px;
+}
+
+.container-is{
+}
+
+.frame-i{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.frame-s{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: -100px;
+}
+
+
+
+svg {
+    height: auto;
+    width: 100%;
+}
