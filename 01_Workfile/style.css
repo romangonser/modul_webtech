@@ -479,9 +479,15 @@ h3 {
 
 /* @media (max-width: 768px) {
 
-
-
-
-
     
 } */
+
+
+
+
+/* ----------------- EFFECTS AND MOVEMENTS ----------------- */
+
+
+.frame-o:hover ~ .info-box {
+    color: black; /* Textfarbe wird schwarz */
+}
