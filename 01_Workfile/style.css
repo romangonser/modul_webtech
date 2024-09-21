@@ -296,6 +296,7 @@ h3 {
     align-self: end;
     z-index: 0;
     letter-spacing: 0.1rem;
+    z-index: 1;
 
 
 }
@@ -310,6 +311,7 @@ h3 {
     justify-self: end;
     letter-spacing: -1.75rem;
     translate: 0 7rem;
+
 
 
 
@@ -487,7 +489,3 @@ h3 {
 
 /* ----------------- EFFECTS AND MOVEMENTS ----------------- */
 
-
-.frame-o:hover ~ .info-box {
-    color: black; /* Textfarbe wird schwarz */
-}
