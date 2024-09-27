@@ -3,9 +3,8 @@
 @import url("https://use.typekit.net/nkm2mrz.css");
 
 
-
 body {
-    font-family: "Neue Haas Grotesk Display Pro", Helvetica, Arial, sans-serif;
+    font-family: "neue-haas-grotesk-display", Helvetica, Arial, sans-serif;
     height: 100vh;
     width: 100vw;
     background-color: black;
@@ -21,21 +20,22 @@ body {
 }
 
 .red {
-    fill: #EA2D3F;
+
     color: #EA2D3F;
 }
 
 .green {
-    fill: #009879;
+
     color: #009879;
 }
 
 .transparent {
+
     opacity: 0.8;
 }
 
 .white {
-    fill: rgb(255, 255, 255);
+
     color: white;
 }
 
@@ -43,7 +43,7 @@ body {
 
 
 h1 {
-    font-family: "Neue Haas Grotesk Display Pro";
+
     font-size: 69.5vh;
     font-weight: 500;
     line-height: 47vh;
@@ -51,7 +51,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Neue Haas Grotesk Display Pro";
+
     font-size: 10vh;
     font-weight: 500;
     text-align: center;
@@ -62,7 +62,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Neue Haas Grotesk Display Pro";
+
     font-size: 3.5vh;
     font-weight: 400;
     margin: 0;
@@ -88,6 +88,8 @@ h3 {
     grid-template-columns: minmax(1vw, 15vw) repeat(5, 14vw) minmax(1vw, 15vw);
     /* gap: 8px; */
     overflow: hidden;
+
+
 }
 
 
@@ -118,7 +120,7 @@ h3 {
     height: 100%;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: minmax(1fr, 38vh) 1fr 13vw;
+    grid-template-columns: minmax(1vh, 38vh) 1fr 13vw;
     grid-area: 1/3/2/7;
     align-self: end;
 
@@ -164,6 +166,8 @@ h3 {
 /*--------------------Klassen Appearance--------------------*/
 
 
+
+
 .frame-g {
 
     grid-row-start: 1;
@@ -174,6 +178,9 @@ h3 {
     align-self: end;
     translate: 8% 1.1%;
     z-index: -1;
+    /* animation-name: slideInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out; */
 
 
 }
@@ -338,41 +345,60 @@ h3 {
 
 .line-horizontal-4 {
 
-    grid-row-start: 5;
-    grid-column-start: 1;
-    grid-row-end: 6;
-    grid-column-end: 8;
+    grid-area: 5/1/6/8;
     align-self: end;
 
 }
 
-.lh1, .lh2, .lh3, .lh4{
+.lh1,
+.lh2,
+.lh3,
+.lh4 {
     width: 100vw;
     height: 1.5px;
     background-color: white;
     z-index: 10;
+    opacity: 0;
 
 }
+
+.lh1,
+.lh2,
+.lh3,
+.lh4 {
+
+    animation-name: slide-in-left-line;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.61, .33, .66, .83);
+    animation-fill-mode: forwards;
+
+
+}
+
 .lh1 {
 
     translate: 0 -9.5vh;
+    animation-delay: 1s;
+
 }
 
 .lh2 {
 
     translate: 0 -19.8vh;
-
+    animation-delay: 2s;
 }
 
 .lh3 {
 
     translate: 0 17.8vh;
-
+    animation-delay: 3s;
 }
 
 .lh4 {
 
     translate: 0 -20vh;
+    animation-delay: 4s;
+
 
 }
 
@@ -383,7 +409,11 @@ h3 {
 
 /* ----------------- LINES VERTICAL----------------- */
 
-.line-vertical-1, .line-vertical-2, .line-vertical-4 {
+
+
+.line-vertical-1,
+.line-vertical-2,
+.line-vertical-4 {
 
     grid-row-start: 1;
     grid-column-start: 3;
@@ -406,25 +436,52 @@ h3 {
 }
 
 
-.lv1, .lv2, .lv3, .lv4 {
+.lv1,
+.lv2,
+.lv3,
+.lv4 {
     width: 1.5px;
     height: 100vh;
     background-color: white;
     z-index: 10;
+    opacity: 0;
+    animation-name: slide-in-top-line;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.61, .33, .66, .83);
+    animation-fill-mode: forwards;
+}
+
+.lv1 {
+    animation-delay: 1s;
+
 }
 
 .lv2 {
     translate: 9.5vh;
+    animation-delay: 2s;
 }
 
 .lv3 {
     translate: 38vh;
+    animation-delay: 3s;
 
 }
 
 .lv4 {
     translate: 47.4vh;
+    animation-delay: 4s;
 
+}
+
+
+.rectangle {
+
+    grid-area: 3/3/4/4;
+    transform: translate(38vh, -9.6vh);
+    width: 9.5vh;
+    height: 9.6vh;
+    background-color: #EA2D3F;
+    z-index: 10;
 }
 
 
@@ -432,8 +489,170 @@ h3 {
 
 
 
+/* ----------------- ANIMATION----------------- */
+
+.frame-g,
+.frame-r,
+.frame-a,
+.frame-l,
+.frame-h,
+.frame-i,
+.frame-s,
+.info-box,
+.graphis,
+.number99 {
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.61, .33, .66, .83);
+    opacity: 0;
+}
+
+.frame-r,
+.frame-l,
+.frame-h {
+    animation-name: slide-in-top-font;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.frame-i,
+.frame-s {
+    animation-name: slide-in-bottom-font;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.frame-g {
+    animation-name: slide-in-left-font;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.frame-a {
+
+    animation-name: slide-in-a;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+
+.graphis,
+.number99,
+.info-box {
+    animation-name: opacity;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+}
 
 
 
 
+@keyframes slide-in-left-line {
 
+    0% {
+        transform: translate(-100vw, 0);
+        opacity: 1;
+
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top-line {
+    0% {
+        transform: translate(0, -100vh);
+        opacity: 1;
+
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes slide-in-left-font {
+    0% {
+        transform: translate(-100vw, 0);
+        opacity: 1;
+
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes slide-in-top-font {
+    0% {
+        transform: translate(0, -100vh);
+        opacity: 1;
+
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes slide-in-bottom-font {
+    0% {
+        transform: translate(0, 100vh);
+        opacity: 1;
+
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+
+    }
+
+
+}
+
+@keyframes slide-in-a {
+    0% {  
+        transform: translate(-20vw, -100vh);
+        opacity: 1;
+
+    }
+
+    100% {     
+        transform: translate(-20vw, 0);
+        opacity: 1;
+
+    }
+    /* 100% {     
+
+        transform: translate(0, 0);
+        opacity: 1;
+
+    } */
+
+
+}
+
+
+
+@keyframes opacity {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
