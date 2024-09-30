@@ -2,9 +2,11 @@
 
 
 
+@import url("https://use.typekit.net/nkm2mrz.css");
+
 
 body {
-    font-family: "Neue Haas Grotesk Display", Helvetica, Arial, sans-serif;
+    font-family: "neue-haas-grotesk-display", 'Courier New', Courier, monospace;
     height: 100vh;
     width: 100vw;
     background-color: black;
@@ -45,15 +47,15 @@ body {
 h1 {
 
     font-size: 69.5vh;
-    font-weight: 700;
-    line-height: 47vh;
+    font-weight: 600;
+    line-height: 52vh;
     margin: 0;
 }
 
 h2 {
 
     font-size: 10vh;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     line-height: 19vh;
     margin: 0;
@@ -184,7 +186,7 @@ h3 {
     grid-column-end: 3;
     justify-self: end;
     align-self: end;
-    translate: 8% 1.1%;
+    translate: 8% 1%;
     z-index: -1;
 
 
@@ -237,7 +239,7 @@ h3 {
     grid-column-end: 7;
     justify-self: start;
     align-self: end;
-    translate: 1vw -19.8%;
+    translate: 1vw -17.7%;
 
 }
 
@@ -250,7 +252,7 @@ h3 {
     grid-column-end: 3;
     justify-self: start;
     align-self: start;
-    translate: -19.3% 14.5%;
+    translate: -19.3% 8.5%;
     z-index: 1;
 
 }
@@ -263,7 +265,7 @@ h3 {
     grid-column-end: 3;
     justify-self: start;
     align-self: start;
-    translate: -1.5% -13.5%;
+    translate: -1.5% -17%;
 
 
 }
@@ -276,7 +278,7 @@ h3 {
     grid-column-end: 3;
     justify-self: start;
     align-self: start;
-    translate: -8% -6.6%;
+    translate: -8% -10.6%;
 }
 
 .info-box {
@@ -302,7 +304,7 @@ h3 {
     align-self: end;
     justify-self: end;
 
-    translate: 21% 34%;
+    translate: 19.5% 31%;
 
 
 
@@ -317,7 +319,7 @@ h3 {
     grid-column-end: 5;
     align-self: end;
     justify-self: start;
-    translate: 25% 34%;
+    translate: 25% 31%;
     z-index: -1;
 
 
@@ -496,7 +498,6 @@ h3 {
     z-index: 10;
     animation-name: stretch-1;
     animation-duration: 1.2s;
-    /* animation-timing-function: linear; */
     animation-fill-mode: forwards;
 }
 
@@ -830,19 +831,20 @@ h3 {
 
 
 
-/* ----------------- BREAKPOINT TABLET M ----------------- */
+
+/* ----------------- BREAKPOINT TABLET M/L ----------------- */
 
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1056px) {
 
     /*-----Tags----*/
 
 
     h1 {
-        font-size: 50vh;
-        line-height: 29.6vh;
+        font-size: 57vh;
+        line-height: 34.3vh;
     }
 
     h2 {
@@ -863,7 +865,192 @@ h3 {
 
 
     .container-ph {
-        grid-template-columns: 27.3vh;
+        grid-template-columns: 31.5vh;
+
+
+
+    }
+
+
+
+    .container-99 {
+        grid-template-rows: 1fr;
+        grid-template-columns: 31.5vh;
+        grid-column-start: 3;
+        grid-column-end: 7;
+
+
+
+    }
+
+    .info-fix {
+
+        grid-row-start: 4;
+        grid-column-start: 6;
+        grid-row-end: 6;
+        grid-column-end: 8;
+        align-self: center;
+
+    }
+
+
+
+
+    /*--------------------Klassen Appearance--------------------*/
+
+
+
+    .frame-g {
+        grid-row-start: 2;
+        translate: 8% 0.2%;
+
+
+
+    }
+
+    .frame-r {
+        translate: -12% 0.1%;
+
+
+    }
+
+    .frame-a {
+        grid-row-end: 2;
+        translate: 3vw 37%;
+
+    }
+
+    .graphis {
+        translate: -8% -15%;
+    }
+
+    .number99 {
+        translate: -5% -10%;
+    }
+
+    .frame-l {
+
+        translate: -19.3% 10%;
+
+    }
+
+    .frame-o {
+
+        translate: -0.6% -21%;
+
+    }
+
+
+    .info-box {
+        translate: 0vw 37%;
+
+    }
+
+    .frame-i {
+        align-self: start;
+        translate: 20% -8.5%;
+
+    }
+
+    .frame-s {
+        align-self: start;
+        justify-self: start;
+        translate: 21% -8.5%;
+
+
+    }
+
+    .line-horizontal-1 {
+
+        grid-row-end: 2;
+    }
+
+    .lh1 {
+        translate: 0vw 16.5vh;
+    }
+
+    .lh2 {
+        translate: 0 -16.3vh;
+
+    }
+
+    .lh3 {
+        translate: 0 14.5vh;
+    }
+
+    .line-horizontal-4 {
+        grid-row-start: 3;
+        grid-row-end: 5;
+        align-self: start;
+
+    }
+
+    .lh4 {
+        translate: 0 37vh;
+    }
+
+
+
+    .lv2 {
+
+        translate: 7.8vh;
+    }
+
+    .lv3 {
+
+        translate: 31.5vh;
+
+    }
+
+    .lv4 {
+
+        translate: calc(31.5vh + 7.8vh);
+
+    }
+
+
+
+
+
+}
+
+
+
+
+/* ----------------- BREAKPOINT TABLET M ----------------- */
+
+
+
+
+@media (max-width: 768px) {
+
+    /*-----Tags----*/
+
+
+    h1 {
+        font-size: 51vh;
+        line-height: 30.3vh;
+    }
+
+    h2 {
+        font-size: 7.5vh;
+    }
+
+    h3 {
+        font-size: 2vh;
+    }
+
+
+
+    /*----------Klassen Grid---------*/
+
+    .grid {
+        grid-template-columns: 0.5fr repeat(5, 14vw) minmax(1vw, 1fr);
+    }
+
+
+    .container-ph {
+        grid-template-columns: 28.2vh;
 
 
 
@@ -925,7 +1112,7 @@ h3 {
 
     .frame-a {
         grid-row-end: 2;
-        translate: 3vw -5%;
+        translate: 3vw -20%;
 
     }
 
@@ -939,36 +1126,36 @@ h3 {
 
     .frame-l {
 
-        translate: -19.3% 10%;
+        translate: -19.3% 5%;
 
     }
 
     .frame-o {
 
-        translate: -1.5% -22.5%;
+        translate: -0.6% -26.5%;
 
     }
 
     .frame-h {
-        translate: -8% -9%;
+        translate: -8% -11%;
 
     }
 
     .info-box {
-        translate: 0vw 33%;
+        translate: 0vw 37%;
 
     }
 
     .frame-i {
         align-self: start;
-        translate: 20% -9.5%;
+        translate: 20% -11.3%;
 
     }
 
     .frame-s {
         align-self: start;
         justify-self: start;
-        translate: -2.5% -9.5%;
+        translate: -2.5% -11.3%;
 
     }
 
@@ -978,7 +1165,7 @@ h3 {
     }
 
     .lh1 {
-        translate: 0vw 0.4vh;
+        translate: 0vw -2.5vh;
     }
 
     .lh2 {
@@ -998,7 +1185,7 @@ h3 {
     }
 
     .lh4 {
-        translate: 0 39.2vh;
+        translate: 0 40vh;
     }
 
 
@@ -1010,13 +1197,13 @@ h3 {
 
     .lv3 {
 
-        translate: calc(27.3vh + 8px);
+        translate: 27.3vh;
 
     }
 
     .lv4 {
 
-        translate: calc(27.3vh + 8px + 6.8vh);
+        translate: calc(27.3vh + 6.8vh);
 
     }
 
@@ -1038,7 +1225,7 @@ h3 {
 
     h1 {
         font-size: 45vh;
-        line-height: 29.6vh;
+        line-height: 32.5vh;
     }
 
     h2 {
@@ -1053,10 +1240,10 @@ h3 {
 
     /*----------Klassen Grid---------*/
 
-   .grid{
-    grid-template-columns:0.5fr repeat(5, 14vw) minmax(1vw, 1fr);
-   }
-   
+    .grid {
+        grid-template-columns: 0.5fr repeat(5, 14vw) minmax(1vw, 1fr);
+    }
+
 
     .container-ph {
         grid-template-columns: 24.6vh;
@@ -1121,12 +1308,12 @@ h3 {
 
     .frame-a {
         grid-row-end: 2;
-        translate: 1vw -10.5%;
+        translate: 1vw -9.5%;
 
     }
 
     .graphis {
-        translate: 6.5 -7%;
+        translate: 6.5% -7%;
     }
 
     .number99 {
@@ -1135,38 +1322,39 @@ h3 {
 
     .frame-l {
 
-        translate: -19.3% 10%;
+        translate: -19.3% 4.9%;
 
     }
 
     .frame-o {
 
-        translate: -1.5% -18.5%;
+        translate: -1.5% -21.4%;
 
     }
 
     .frame-h {
-        translate: -8% -9%;
+        translate: -8% -7%;
 
     }
 
     .info-box {
-        translate: 0vw 33%;
+        translate: 3vw 33%;
 
     }
 
     .frame-i {
         align-self: start;
-        translate: 20%;
+        translate: 20% -8%;
 
     }
 
     .frame-s {
         align-self: start;
         justify-self: start;
-        translate: -4.5%;
+        translate: -4.5% -8%;
 
     }
+
     .line-horizontal-1 {
 
         grid-row-end: 2;
@@ -1216,4 +1404,3 @@ h3 {
     }
 
 }
-
