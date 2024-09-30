@@ -1,0 +1,1232 @@
+/* ------- Import------- */
+
+
+
+@import url("https://use.typekit.net/nkm2mrz.css");
+
+
+body {
+    font-family: "neue-haas-grotesk-display", 'Courier New', Courier, monospace;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    margin: 0px;
+}
+
+
+/*-----colors----*/
+
+.Black {
+    fill: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+.red {
+
+    color: #EA2D3F;
+}
+
+.green {
+
+    color: #009879;
+}
+
+.transparent {
+
+    opacity: 0.8;
+}
+
+.white {
+
+    color: white;
+}
+
+/*-----Tags----*/
+
+
+h1 {
+
+    font-size: 69.5vh;
+    font-weight: 600;
+    line-height: 52vh;
+    margin: 0;
+}
+
+h2 {
+
+    font-size: 10vh;
+    font-weight: 600;
+    text-align: center;
+    line-height: 19vh;
+    margin: 0;
+
+
+}
+
+h3 {
+
+    font-size: 3.5vh;
+    font-weight: 400;
+    margin: 0;
+
+}
+
+/*----------Klassen Grid---------*/
+
+
+.postergraphis99 {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+    grid-template-columns: minmax(1vw, 15vw) repeat(5, 14vw) minmax(1vw, 15vw);
+    /* gap: 8px; */
+    overflow: hidden;
+    animation-name: gap-grid;
+    animation-delay: 7.5s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+
+}
+
+
+.container-ph {
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 38vh;
+    grid-area: 3/3/5/6;
+    align-self: center;
+    z-index: 0;
+    /* gap: 8px; */
+    animation-name: gap-ph;
+    animation-delay: 7.5s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+.container-p {
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-area: 1/1/2/2;
+
+}
+
+
+.container-graphis {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: minmax(1vh, 38vh) 1fr 13vw;
+    grid-area: 1/3/2/7;
+    align-self: end;
+
+
+}
+
+.container-99 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 38.5vh 1fr;
+    grid-area: 2/3/3/6;
+    justify-self: center;
+
+
+}
+
+.info-fix {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr minmax(5vw, 15vw);
+    grid-area: 3/6/5/8;
+    justify-self: end;
+    align-self: end;
+
+}
+
+.container-info {
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr minmax(1vw, 15vw);
+    grid-area: 1/1/2/2;
+    align-self: end;
+    translate: 2.5vw;
+
+}
+
+
+
+
+/*--------------------Klassen Appearance--------------------*/
+
+
+
+
+.frame-g {
+
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+    justify-self: end;
+    align-self: end;
+    translate: 8% 1%;
+    z-index: -1;
+
+
+
+}
+
+.frame-r {
+
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 4;
+    justify-self: left;
+    align-self: end;
+    translate: -12% 1%;
+    z-index: -1;
+
+
+}
+
+.graphis {
+
+    grid-area: 1/2/2/3;
+    justify-self: start;
+    align-self: center;
+    translate: -3.5%;
+
+
+}
+
+.number99 {
+
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
+    justify-self: start;
+    align-self: start;
+    translate: 0;
+    z-index: 1;
+    translate: -8% -20%;
+
+}
+
+.frame-a {
+
+    grid-row-start: 1;
+    grid-column-start: 6;
+    grid-row-end: 3;
+    grid-column-end: 7;
+    justify-self: start;
+    align-self: end;
+    translate: 1vw -17.7%;
+
+}
+
+
+.frame-l {
+
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 3;
+    justify-self: start;
+    align-self: start;
+    translate: -19.3% 8.5%;
+    z-index: 1;
+
+}
+
+.frame-o {
+
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 3;
+    justify-self: start;
+    align-self: start;
+    translate: -1.5% -17%;
+
+
+}
+
+.frame-h {
+
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
+    justify-self: start;
+    align-self: start;
+    translate: -8% -10.6%;
+}
+
+.info-box {
+
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    justify-self: start;
+    align-self: end;
+    translate: 0vw -6%;
+    z-index: 2;
+
+
+}
+
+.frame-i {
+
+    grid-row-start: 5;
+    grid-column-start: 2;
+    grid-row-end: 6;
+    grid-column-end: 3;
+    align-self: end;
+    justify-self: end;
+
+    translate: 19.5% 31%;
+
+
+
+
+}
+
+.frame-s {
+
+    grid-row-start: 5;
+    grid-column-start: 3;
+    grid-row-end: 6;
+    grid-column-end: 5;
+    align-self: end;
+    justify-self: start;
+    translate: 25% 31%;
+    z-index: -1;
+
+
+}
+
+
+
+/* ----------------- LINES HORIZONTAL----------------- */
+
+.line-horizontal-1 {
+
+    grid-area: 1/1/3/8;
+    align-self: end;
+
+
+}
+
+.line-horizontal-2 {
+
+    grid-area: 3/1/5/8;
+    align-self: center;
+
+}
+
+.line-horizontal-3 {
+
+    grid-area: 3/1/5/8;
+    align-self: center;
+
+}
+
+.line-horizontal-4 {
+
+    grid-area: 5/1/6/8;
+    align-self: end;
+
+}
+
+.lh1,
+.lh2,
+.lh3,
+.lh4 {
+    width: 100vw;
+    height: 1.5px;
+    background-color: white;
+    z-index: 10;
+    opacity: 0;
+
+}
+
+.lh1,
+.lh2,
+.lh3,
+.lh4 {
+
+    animation-name: slide-in-left-line;
+    animation-duration: 6s;
+    animation-timing-function: cubic-bezier(.61, .33, .66, .83);
+    animation-fill-mode: forwards;
+
+
+}
+
+.lh1 {
+
+    translate: 0 -9.5vh;
+    animation-delay: 1.1s;
+
+}
+
+.lh2 {
+
+    translate: 0 -19.8vh;
+    animation-delay: 1s;
+}
+
+.lh3 {
+
+    translate: 0 17.8vh;
+    animation-delay: 1.5s;
+}
+
+.lh4 {
+
+    translate: 0 -20vh;
+    animation-delay: 1.6s;
+
+
+}
+
+
+
+
+
+
+/* ----------------- LINES VERTICAL----------------- */
+
+
+
+.line-vertical-1,
+.line-vertical-2,
+.line-vertical-4 {
+
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 6;
+    grid-column-end: 4;
+
+
+
+}
+
+
+.line-vertical-3 {
+
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 6;
+    grid-column-end: 4;
+
+
+}
+
+
+.lv1,
+.lv2,
+.lv3,
+.lv4 {
+    width: 1.5px;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    opacity: 0;
+    animation-name: slide-in-top-line;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(.61, .33, .66, .83);
+    animation-fill-mode: forwards;
+}
+
+.lv1 {
+    animation-delay: 2s;
+
+}
+
+.lv2 {
+    translate: 9.5vh;
+    animation-delay: 2.1s;
+}
+
+.lv3 {
+    translate: 38vh;
+    animation-delay: 2.2s;
+
+}
+
+.lv4 {
+    translate: 47.4vh;
+    animation-delay: 2.3s;
+
+}
+
+
+.rectangle {
+    display: grid;
+    grid-area: 3/3/4/4;
+    grid-template-rows: 9.6vh;
+    grid-template-columns: calc(43vw - 13vh + 9.6vh);
+    transform: translate(38vh, -9.6vh);
+}
+
+.r-fill {
+    justify-self: start;
+    width: 9.6vh;
+    height: 100%;
+    background-color: #EA2D3F;
+    z-index: 10;
+    animation-name: stretch-1;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+/* ----------------- ANIMATION----------------- */
+
+
+.frame-r,
+.frame-h,
+.frame-i,
+.frame-s {
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.37, .51, .85, 1.16);
+    animation-duration: 1s;
+    opacity: 0;
+
+}
+
+
+.info-box,
+.graphis,
+.number99 {
+    animation-fill-mode: forwards;
+    animation-duration: 0.2s;
+    opacity: 0;
+
+}
+
+
+
+.frame-r {
+    animation-name: slide-in-top-font;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.frame-l {
+    animation-name: slide-in-top-l;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+
+.frame-i,
+.frame-s,
+.frame-h {
+    animation-name: slide-in-bottom-font;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.frame-g {
+    animation-name: slide-in-left-font;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+
+}
+
+.frame-a {
+
+    animation-name: slide-in-a;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+
+.graphis,
+.number99,
+.info-box {
+    animation-name: opacity;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+}
+
+.frame-r {
+    animation-delay: 2.6s;
+}
+
+.frame-i {
+    animation-delay: 3.2s;
+}
+
+.frame-s {
+    animation-delay: 3.7s;
+}
+
+.frame-a {
+    animation-delay: 4.2s;
+}
+
+.frame-g {
+    animation-delay: 5s;
+}
+
+.frame-l {
+    animation-delay: 5.3s;
+}
+
+.r-fill {
+    animation-delay: 6.6s;
+}
+
+.frame-h {
+    animation-delay: 6.6s;
+}
+
+.graphis {
+    animation-delay: 6.6s;
+}
+
+.number99 {
+    animation-delay: 6.7s;
+}
+
+.info-box {
+    animation-delay: 7s;
+}
+
+
+@keyframes slide-in-left-line {
+
+    0% {
+        transform: translate(-100vw, 0);
+        opacity: 1;
+
+    }
+
+    8% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+    83% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+
+@keyframes slide-in-top-line {
+    0% {
+        transform: translate(0, -100vh);
+        opacity: 1;
+
+    }
+
+    8% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+    83% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+}
+
+@keyframes slide-in-left-font {
+    0% {
+        transform: translate(-100vw, 0);
+        opacity: 1;
+
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+
+}
+
+
+@keyframes slide-in-top-font {
+    0% {
+        transform: translate(0, -100vh);
+        opacity: 1;
+
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes slide-in-top-l {
+    0% {
+        transform: translate(0, -100vh);
+        opacity: 0.8;
+
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0.8;
+    }
+
+}
+
+@keyframes slide-in-bottom-font {
+    0% {
+        transform: translate(0, 100vh);
+        opacity: 1;
+
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+
+    }
+
+
+}
+
+@keyframes slide-in-a {
+    0% {
+
+        transform: translate(calc(-43vw + 13vh), -100vh);
+        opacity: 1;
+
+    }
+
+    40% {
+        transform: translate(calc(-43vw + 13vh), 0);
+        opacity: 1;
+    }
+
+    80% {
+        transform: translate(calc(-43vw + 13vh), 0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+
+}
+
+
+
+@keyframes opacity {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes stretch-1 {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        justify-self: start;
+        width: 100%;
+        transform-origin: left;
+
+    }
+
+    50.01% {
+        justify-self: end;
+        width: 100%;
+        transform-origin: right;
+
+    }
+
+    100% {
+        justify-self: end;
+        width: 0%;
+        transform-origin: right;
+        opacity: 1;
+    }
+}
+
+@keyframes gap-ph {
+    0% {
+        gap: 0;
+
+    }
+
+    100% {
+        gap: 8px;
+
+    }
+
+}
+
+@keyframes gap-grid {
+    0% {
+        gap: 0;
+
+    }
+
+    100% {
+        gap: 8px;
+
+    }
+}
+
+
+
+
+
+/* ----------------- BREAKPOINT TABLET M/L ----------------- */
+
+
+
+
+@media (max-width: 1056px) {
+
+    /*-----Tags----*/
+
+
+    h1 {
+        font-size: 57vh;
+        line-height: 34.3vh;
+    }
+
+    h2 {
+        font-size: 7.5vh;
+    }
+
+    h3 {
+        font-size: 2vh;
+    }
+
+
+
+    /*----------Klassen Grid---------*/
+
+    .grid {
+        grid-template-columns: 0.5fr repeat(5, 14vw) minmax(1vw, 1fr);
+    }
+
+
+    .container-ph {
+        grid-template-columns: 31.5vh;
+
+
+
+    }
+
+
+
+    .container-99 {
+        grid-template-rows: 1fr;
+        grid-template-columns: 31.5vh;
+        grid-column-start: 3;
+        grid-column-end: 7;
+
+
+
+    }
+
+    .info-fix {
+
+        grid-row-start: 4;
+        grid-column-start: 6;
+        grid-row-end: 6;
+        grid-column-end: 8;
+        align-self: center;
+
+    }
+
+
+
+
+    /*--------------------Klassen Appearance--------------------*/
+
+
+
+    .frame-g {
+        grid-row-start: 2;
+        translate: 8% 0.2%;
+
+
+
+    }
+
+    .frame-r {
+        translate: -12% 0.1%;
+
+
+    }
+
+    .frame-a {
+        grid-row-end: 2;
+        translate: 3vw 37%;
+
+    }
+
+    .graphis {
+        translate: -8% -15%;
+    }
+
+    .number99 {
+        translate: -5% -10%;
+    }
+
+    .frame-l {
+
+        translate: -19.3% 10%;
+
+    }
+
+    .frame-o {
+
+        translate: -0.6% -21%;
+
+    }
+
+
+    .info-box {
+        translate: 0vw 37%;
+
+    }
+
+    .frame-i {
+        align-self: start;
+        translate: 20% -8.5%;
+
+    }
+
+    .frame-s {
+        align-self: start;
+        justify-self: start;
+        translate: 21% -8.5%;
+
+
+    }
+
+    .line-horizontal-1 {
+
+        grid-row-end: 2;
+    }
+
+    .lh1 {
+        translate: 0vw 16.5vh;
+    }
+
+    .lh2 {
+        translate: 0 -16.3vh;
+
+    }
+
+    .lh3 {
+        translate: 0 14.5vh;
+    }
+
+    .line-horizontal-4 {
+        grid-row-start: 3;
+        grid-row-end: 5;
+        align-self: start;
+
+    }
+
+    .lh4 {
+        translate: 0 37vh;
+    }
+
+
+
+    .lv2 {
+
+        translate: 7.8vh;
+    }
+
+    .lv3 {
+
+        translate: 31.5vh;
+
+    }
+
+    .lv4 {
+
+        translate: calc(31.5vh + 7.8vh);
+
+    }
+
+
+
+
+
+}
+
+
+
+
+/* ----------------- BREAKPOINT TABLET M ----------------- */
+
+
+
+
+@media (max-width: 768px) {
+
+    /*-----Tags----*/
+
+
+    h1 {
+        font-size: 51vh;
+        line-height: 30.3vh;
+    }
+
+    h2 {
+        font-size: 7.5vh;
+    }
+
+    h3 {
+        font-size: 2vh;
+    }
+
+
+
+    /*----------Klassen Grid---------*/
+
+    .grid {
+        grid-template-columns: 0.5fr repeat(5, 14vw) minmax(1vw, 1fr);
+    }
+
+
+    .container-ph {
+        grid-template-columns: 28.2vh;
+
+
+
+    }
+
+
+
+    .container-graphis {
+        grid-template-columns: 1;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 2;
+        grid-column-end: 6;
+
+
+
+    }
+
+    .container-99 {
+        grid-template-rows: 1fr;
+        grid-template-columns: 27.3vh;
+        grid-column-start: 3;
+        grid-column-end: 7;
+
+
+
+    }
+
+    .info-fix {
+
+        grid-row-start: 4;
+        grid-column-start: 6;
+        grid-row-end: 6;
+        grid-column-end: 8;
+        align-self: center;
+
+    }
+
+
+
+
+    /*--------------------Klassen Appearance--------------------*/
+
+
+
+    .frame-g {
+        grid-row-start: 2;
+        translate: 8% 0.2%;
+
+
+
+    }
+
+    .frame-r {
+        translate: -12% 0.1%;
+
+
+    }
+
+    .frame-a {
+        grid-row-end: 2;
+        translate: 3vw -20%;
+
+    }
+
+    .graphis {
+        translate: -5% -8%;
+    }
+
+    .number99 {
+        translate: -5% -10%;
+    }
+
+    .frame-l {
+
+        translate: -19.3% 5%;
+
+    }
+
+    .frame-o {
+
+        translate: -0.6% -26.5%;
+
+    }
+
+    .frame-h {
+        translate: -8% -11%;
+
+    }
+
+    .info-box {
+        translate: 0vw 37%;
+
+    }
+
+    .frame-i {
+        align-self: start;
+        translate: 20% -11.3%;
+
+    }
+
+    .frame-s {
+        align-self: start;
+        justify-self: start;
+        translate: -2.5% -11.3%;
+
+    }
+
+    .line-horizontal-1 {
+
+        grid-row-end: 2;
+    }
+
+    .lh1 {
+        translate: 0vw -2.5vh;
+    }
+
+    .lh2 {
+        translate: 0 -16.3vh;
+
+    }
+
+    .lh3 {
+        translate: 0 10.7vh;
+    }
+
+    .line-horizontal-4 {
+        grid-row-start: 3;
+        grid-row-end: 5;
+        align-self: start;
+
+    }
+
+    .lh4 {
+        translate: 0 40vh;
+    }
+
+
+
+    .lv2 {
+
+        translate: 6.8vh;
+    }
+
+    .lv3 {
+
+        translate: 27.3vh;
+
+    }
+
+    .lv4 {
+
+        translate: calc(27.3vh + 6.8vh);
+
+    }
+
+
+
+
+
+}
+
+
+
+
+/* ----------------- BREAKPOINT MOBILE S ----------------- */
+
+@media (max-width: 640px) {
+
+    /*-----Tags----*/
+
+
+    h1 {
+        font-size: 45vh;
+        line-height: 32.5vh;
+    }
+
+    h2 {
+        font-si
