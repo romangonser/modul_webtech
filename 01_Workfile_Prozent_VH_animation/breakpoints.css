@@ -199,4 +199,70 @@
 
 @media (max-width: 768px) {
 
-    /*-----T
+    /*-----Tags----*/
+
+
+    h1 {
+        font-size: 50vh;
+        line-height: 29.6vh;
+    }
+
+    h2 {
+        font-size: 7.5vh;
+    }
+
+    h3 {
+        font-size: 2vh;
+    }
+
+
+
+    /*----------Klassen Grid---------*/
+
+   .grid{
+    grid-template-columns:0.5fr repeat(5, 14vw) minmax(1vw, 1fr);
+   }
+   
+
+    .container-ph {
+        grid-template-columns: 24.6vh;
+
+
+
+    }
+
+
+
+    .container-graphis {
+        grid-template-columns: 1;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 2;
+        grid-column-end: 6;
+
+
+
+    }
+
+    .container-99 {
+        grid-template-rows: 1fr;
+        grid-template-columns: 24.8vh;
+        grid-column-start: 3;
+        grid-column-end: 7;
+
+
+
+    }
+
+    .info-fix {
+
+        grid-row-start: 4;
+        grid-column-start: 6;
+        grid-row-end: 6;
+        grid-column-end: 8;
+        align-self: center;
+
+    }
+
+
+}
