@@ -1,6 +1,7 @@
 /* ------- Import------- */
 
 
+
 @import url("https://use.typekit.net/nkm2mrz.css");
 
 
@@ -49,7 +50,6 @@ h1 {
     font-weight: 600;
     line-height: 52vh;
     margin: 0;
-    transition: font-size .5s ease, line-height .5s ease;
 }
 
 h2 {
@@ -59,7 +59,6 @@ h2 {
     text-align: center;
     line-height: 19vh;
     margin: 0;
-    transition: font-size .5s ease, line-height .5s ease;
 
 
 }
@@ -69,7 +68,6 @@ h3 {
     font-size: 3.5vh;
     font-weight: 400;
     margin: 0;
-    transition: font-size .5s ease, line-height .5s ease;
 
 }
 
@@ -90,6 +88,7 @@ h3 {
     display: grid;
     grid-template-rows: repeat(5, minmax(0, 1fr));
     grid-template-columns: minmax(1vw, 15vw) repeat(5, 14vw) minmax(1vw, 15vw);
+    /* gap: 8px; */
     overflow: hidden;
     animation-name: gap-grid;
     animation-delay: 7.5s;
@@ -108,6 +107,7 @@ h3 {
     grid-area: 3/3/5/6;
     align-self: center;
     z-index: 0;
+    /* gap: 8px; */
     animation-name: gap-ph;
     animation-delay: 7.5s;
     animation-duration: 0.5s;
@@ -227,7 +227,7 @@ h3 {
     align-self: start;
     translate: 0;
     z-index: 1;
-    translate: -8% -25%;
+    translate: -8% -20%;
 
 }
 
@@ -240,7 +240,6 @@ h3 {
     justify-self: start;
     align-self: end;
     translate: 1vw -17.7%;
-    transition: transform 0.5s ease;
 
 }
 
@@ -266,7 +265,7 @@ h3 {
     grid-column-end: 3;
     justify-self: start;
     align-self: start;
-    translate: -1.5% -16.5%;
+    translate: -1.5% -17%;
 
 
 }
@@ -483,6 +482,25 @@ h3 {
 }
 
 
+.rectangle {
+    display: grid;
+    grid-area: 3/3/4/4;
+    grid-template-rows: 9.6vh;
+    grid-template-columns: calc(43vw - 13vh + 9.6vh);
+    transform: translate(38vh, -9.6vh);
+}
+
+.r-fill {
+    justify-self: start;
+    width: 9.6vh;
+    height: 100%;
+    background-color: #EA2D3F;
+    z-index: 10;
+    animation-name: stretch-1;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
 
 
 
@@ -594,7 +612,7 @@ h3 {
 }
 
 .frame-h {
-    animation-delay: 6.4s;
+    animation-delay: 6.6s;
 }
 
 .graphis {
@@ -758,6 +776,32 @@ h3 {
     }
 }
 
+@keyframes stretch-1 {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        justify-self: start;
+        width: 100%;
+        transform-origin: left;
+
+    }
+
+    50.01% {
+        justify-self: end;
+        width: 100%;
+        transform-origin: right;
+
+    }
+
+    100% {
+        justify-self: end;
+        width: 0%;
+        transform-origin: right;
+        opacity: 1;
+    }
+}
 
 @keyframes gap-ph {
     0% {
@@ -793,7 +837,7 @@ h3 {
 
 
 
-@media (max-width: 1040px) {
+@media (max-width: 1056px) {
 
     /*-----Tags----*/
 
@@ -831,7 +875,7 @@ h3 {
 
     .container-99 {
         grid-template-rows: 1fr;
-        grid-template-columns: calc(31.5vh + 8px);
+        grid-template-columns: 31.5vh;
         grid-column-start: 3;
         grid-column-end: 7;
 
@@ -872,7 +916,7 @@ h3 {
 
     .frame-a {
         grid-row-end: 2;
-        translate: 3vw 11%;
+        translate: 3vw 37%;
 
     }
 
@@ -881,12 +925,12 @@ h3 {
     }
 
     .number99 {
-        translate: -5% -7%;
+        translate: -5% -10%;
     }
 
     .frame-l {
 
-        translate: -19.3% 11%;
+        translate: -19.3% 10%;
 
     }
 
@@ -922,7 +966,7 @@ h3 {
     }
 
     .lh1 {
-        translate: 0vw 7.6vh;
+        translate: 0vw 16.5vh;
     }
 
     .lh2 {
@@ -1027,7 +1071,7 @@ h3 {
 
     .container-99 {
         grid-template-rows: 1fr;
-        grid-template-columns: calc(27.3vh + 8px);
+        grid-template-columns: 27.3vh;
         grid-column-start: 3;
         grid-column-end: 7;
 
@@ -1130,7 +1174,7 @@ h3 {
     }
 
     .lh3 {
-        translate: 0 11.3vh;
+        translate: 0 10.7vh;
     }
 
     .line-horizontal-4 {
@@ -1153,13 +1197,13 @@ h3 {
 
     .lv3 {
 
-        translate: 28.1vh;
+        translate: 27.3vh;
 
     }
 
     .lv4 {
 
-        translate: calc(28.1vh + 6.8vh);
+        translate: calc(27.3vh + 6.8vh);
 
     }
 
@@ -1185,178 +1229,4 @@ h3 {
     }
 
     h2 {
-        font-size: 7vh;
-    }
-
-    h3 {
-        font-size: 1.7vh;
-    }
-
-
-
-    /*----------Klassen Grid---------*/
-
-    .grid {
-        grid-template-columns: 0.5fr repeat(5, 14vw) minmax(1vw, 1fr);
-    }
-
-
-    .container-ph {
-        grid-template-columns: 24.6vh;
-
-
-
-    }
-
-
-
-    .container-graphis {
-        grid-template-columns: 1;
-        grid-row-start: 1;
-        grid-column-start: 2;
-        grid-row-end: 2;
-        grid-column-end: 6;
-
-
-
-    }
-
-    .container-99 {
-        grid-template-rows: 1fr;
-        grid-template-columns: calc(24.6vh + 8px);
-        grid-column-start: 3;
-        grid-column-end: 7;
-
-
-
-    }
-
-    .info-fix {
-
-        grid-row-start: 4;
-        grid-column-start: 6;
-        grid-row-end: 6;
-        grid-column-end: 8;
-        align-self: center;
-
-    }
-
-
-
-
-    /*--------------------Klassen Appearance--------------------*/
-
-
-
-    .frame-g {
-        grid-row-start: 2;
-        translate: 8% 0.2%;
-
-
-
-    }
-
-    .frame-r {
-        translate: -12% 0.1%;
-
-
-    }
-
-    .frame-a {
-        grid-row-end: 2;
-        translate: 1vw -9.5%;
-
-    }
-
-    .graphis {
-        translate: 6.5% -7%;
-    }
-
-    .number99 {
-        translate: -19% -10%;
-    }
-
-    .frame-l {
-
-        translate: -19.3% 4.9%;
-
-    }
-
-    .frame-o {
-
-        translate: -1.5% -21.4%;
-
-    }
-
-    .frame-h {
-        translate: -8% -7%;
-
-    }
-
-    .info-box {
-        translate: 3vw 33%;
-
-    }
-
-    .frame-i {
-        align-self: start;
-        translate: 20% -8%;
-
-    }
-
-    .frame-s {
-        align-self: start;
-        justify-self: start;
-        translate: -4.5% -8%;
-
-    }
-
-    .line-horizontal-1 {
-
-        grid-row-end: 2;
-    }
-
-    .lh1 {
-        translate: 0vw -2.8vh;
-    }
-
-    .lh2 {
-        translate: 0 -14.2vh;
-
-    }
-
-    .lh3 {
-        translate: 0 10.2vh;
-    }
-
-    .line-horizontal-4 {
-        grid-row-start: 3;
-        grid-row-end: 5;
-        align-self: start;
-
-    }
-
-    .lh4 {
-        translate: 0 37.8vh;
-    }
-
-
-
-    .lv2 {
-
-        translate: 6vh;
-    }
-
-    .lv3 {
-
-        translate: 24.6vh;
-
-    }
-
-    .lv4 {
-
-        translate: 30.6vh;
-
-    }
-
-}
+        font-si
