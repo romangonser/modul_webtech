@@ -5,7 +5,7 @@
 
 
 body {
-    font-family: "neue-haas-grotesk-display", 'Courier New', Courier, monospace;
+    font-family: "neue-haas-grotesk-display", Helvetica, Arial, sans-serif;
     height: 100vh;
     width: 100vw;
     background-color: black;
@@ -27,7 +27,7 @@ body {
 
 .green {
 
-    color: #009879;
+    color: #009986;
 }
 
 .transparent {
@@ -49,7 +49,7 @@ h1 {
     font-weight: 600;
     line-height: 52vh;
     margin: 0;
-    transition: font-size .5s ease, line-height .5s ease;
+
 }
 
 h2 {
@@ -59,8 +59,6 @@ h2 {
     text-align: center;
     line-height: 19vh;
     margin: 0;
-    transition: font-size .5s ease, line-height .5s ease;
-
 
 }
 
@@ -69,7 +67,6 @@ h3 {
     font-size: 3.5vh;
     font-weight: 400;
     margin: 0;
-    transition: font-size .5s ease, line-height .5s ease;
 
 }
 
@@ -130,7 +127,7 @@ h3 {
     height: 100%;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: minmax(1vh, 38vh) 1fr 13vw;
+    grid-template-columns: minmax(1vh, 38.5vh) 1fr 13vw;
     grid-area: 1/3/2/7;
     align-self: end;
 
@@ -415,7 +412,6 @@ h3 {
 
 
 
-
 /* ----------------- LINES VERTICAL----------------- */
 
 
@@ -483,12 +479,7 @@ h3 {
 }
 
 
-
-
-
-
-
-/* ----------------- ANIMATION----------------- */
+/* ----------------- ANIMATION Frames----------------- */
 
 
 .frame-r,
@@ -1294,7 +1285,7 @@ h3 {
     }
 
     .info-box {
-        translate: 3vw 33%;
+        translate: 0 33%;
 
     }
 
