@@ -1,7 +1,3 @@
-https://romangonser.github.io/modul_webtech/01_Workfile/Graphis_99.html
+Finale Version Abgabe Projekt Plakatgestaltung WebTech
 
-
-Fontfehler
-Da es sich um einen Font aus der AdobeFonts Bibliothek handelt, kann es sein, dass sie Schrift nicht vollständig geladen wird.
-Beim Brave-Browser liegt es an den Datenschutz-Einstellungen
-Beim Safari eventuell an den Defaulteinstellungen von Adobe mit Font-Display: Auto;
+https://romangonser.github.io/modul_webtech/01_Final/Graphis_99.html
